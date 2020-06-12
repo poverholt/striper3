@@ -94,7 +94,8 @@ var createCheckoutSession = function () {
       'Content-Type': 'application/json',
     },
     body: JSON.stringify({
-      quantity: quantity,
+      unit_amount: 1000, // Get from widgets
+      // quantity: quantity,
       locale: i18next.language.toLowerCase().split('-')[0],
     }),
   }).then(function (result) {
