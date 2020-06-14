@@ -2,8 +2,8 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title data-i18n="title"></title>
-    <meta name="description" content="A demo of Stripe Payment Intents" />
+    <title>Agnihotra Donations</title>
+    <meta name="description" content="Donations using Stripe" />
 
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="css/normalize.css" />
@@ -26,8 +26,8 @@
         </header>
         <section class="container">
           <div>
-            <h1 data-i18n="headline"></h1>
-            <h4 data-i18n="subline"></h4>
+            <h1>Single Photo</h1>
+            <h4>Purchase a Pasha original photo</h4>
             <div class="pasha-image">
               <img
                 src="https://picsum.photos/280/320?random=4"
@@ -36,20 +36,20 @@
               />
             </div>
           </div>
-          <div class="quantity-setter">
-            <button class="increment-btn" id="subtract" disabled>
-              -
-            </button>
-            <input type="number" id="quantity-input" min="1" value="1" />
-            <button class="increment-btn" id="add">+</button>
+          <div class="amount-setter">
+            <button class="fixed-amount" id="fa_10" disabled>$10</button>
+            <button class="fixed-amount" id="fa_25" disabled>$25</button>
+            <button class="fixed-amount" id="fa_50" disabled>$50</button>
+            <button class="fixed-amount" id="fa_100" disabled>$100</button>
+            <input type="number" id="other" placeholder="Other" disabled>
           </div>
-          <p class="sr-legal-text" data-i18n="sr-legal-text"></p>
-
-          <button
-            id="submit"
-            data-i18n="button.submit"
-            i18n-options='{ "total": "0" }'
-          ></button>
+          <p class="sr-legal-text">Number of copies (max 10)</p>
+          <p class="giving" id="giving">
+            I am giving {total}
+          </p>
+          <button id="submit">
+              Preview
+          </button>
         </section>
         <div id="error-message"></div>
       </div>

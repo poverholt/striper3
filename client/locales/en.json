@@ -3,7 +3,8 @@
   "headline": "Single photo",
   "subline": "Purchase a Pasha original photo",
   "sr-legal-text": "Number of copies (max 10)",
+  "giving": "I am giving {{total}}",
   "button": {
-    "submit": "Buy for {{total}}"
+    "submit": "Preview"
   }
 }
