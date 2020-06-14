@@ -75,7 +75,7 @@ var createCheckoutSession = function () {
     body: JSON.stringify({
       unit_amount: unit_amount, // Get from widgets
       // quantity: quantity,
-      locale: i18next.language.toLowerCase().split('-')[0],
+      // locale: i18next.language.toLowerCase().split('-')[0],
     }),
   }).then(function (result) {
     return result.json();
